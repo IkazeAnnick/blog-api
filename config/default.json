@@ -1,6 +1,6 @@
 {
   "port": 5000,
-  "mongoURI": "mongodb://localhost:27017/blog-api",
+  "mongoURI": "mongodb://localhost:27017/log-api",
   "jwtSecret": "your_jwt_secret_key",
   "jwtExpiration": "24h"
 }

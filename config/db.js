@@ -3,13 +3,11 @@ const config = require('./default.json');
 
 const connectDB = async () => {
   try {
-    await mongoose.connect(config.mongoURI, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true
-    });
-    console.log('MongoDB Connected...');
-  } catch (err) {
-    console.error('Failed to connect to MongoDB', err.message);
+    await mongoose.connect(process.env.MONGO_URI);
+
+    console.log('MongoDB connected successfully');
+  } catch (error) {
+    console.error('MongoDB connection failed:', error);
     process.exit(1);
   }
 };
