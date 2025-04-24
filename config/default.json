@@ -1,4 +1,6 @@
 {
-    "mongoURI": "mongodb://localhost:27017/blog-api",
-    "jwtSecret": "myIkazeKey"
-  }
+  "port": 5000,
+  "mongoURI": "mongodb://localhost:27017/blog-api",
+  "jwtSecret": "your_jwt_secret_key",
+  "jwtExpiration": "24h"
+}

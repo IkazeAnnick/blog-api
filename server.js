@@ -1,9 +1,10 @@
-import app from './app.js';
-import mongoose from 'mongoose';
-import config from 'config';
-import connectDB from './config/db.js';
-
-const PORT = process.env.PORT || 5000;
-
+const app = require('./app');
+const config = require('./config/default.json');
+const connectDB = require('./config/db');
 connectDB();
-app.listen(PORT, () => console.log(`Server running on ${PORT}`));
+
+const PORT = process.env.PORT || config.port || 5000;
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
