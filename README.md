@@ -7,3 +7,6 @@ Features
 - Category management (admin)
 - Authenticated routes
 - Middleware for auth, role, and owner check
+
+
+Done by Annick Ikaze And Aline Gihozo Uwase
